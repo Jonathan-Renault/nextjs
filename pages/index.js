@@ -9,46 +9,261 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Bienvenue dans <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <div>
+        <section>
+          {/*for demo wrap*/}
+          <h1>Fixed Table header</h1>
+          <div className="tbl-header">
+            <table cellPadding={0} cellSpacing={0} border={0}>
+              <thead>
+              <tr>
+                <th>Code</th>
+                <th>Company</th>
+                <th>Price</th>
+                <th>Change</th>
+                <th>Change %</th>
+              </tr>
+              </thead>
+            </table>
+          </div>
+          <div className="tbl-content">
+            <table cellPadding={0} cellSpacing={0} border={0}>
+              <tbody>
+              <tr>
+                <td>AAC</td>
+                <td>AUSTRALIAN COMPANY </td>
+                <td>$1.38</td>
+                <td>+2.01</td>
+                <td>-0.36%</td>
+              </tr>
+              <tr>
+                <td>AAD</td>
+                <td>AUSENCO</td>
+                <td>$2.38</td>
+                <td>-0.01</td>
+                <td>-1.36%</td>
+              </tr>
+              <tr>
+                <td>AAX</td>
+                <td>ADELAIDE</td>
+                <td>$3.22</td>
+                <td>+0.01</td>
+                <td>+1.36%</td>
+              </tr>
+              <tr>
+                <td>XXD</td>
+                <td>ADITYA BIRLA</td>
+                <td>$1.02</td>
+                <td>-1.01</td>
+                <td>+2.36%</td>
+              </tr>
+              <tr>
+                <td>AAC</td>
+                <td>AUSTRALIAN COMPANY </td>
+                <td>$1.38</td>
+                <td>+2.01</td>
+                <td>-0.36%</td>
+              </tr>
+              <tr>
+                <td>AAD</td>
+                <td>AUSENCO</td>
+                <td>$2.38</td>
+                <td>-0.01</td>
+                <td>-1.36%</td>
+              </tr>
+              <tr>
+                <td>AAX</td>
+                <td>ADELAIDE</td>
+                <td>$3.22</td>
+                <td>+0.01</td>
+                <td>+1.36%</td>
+              </tr>
+              <tr>
+                <td>XXD</td>
+                <td>ADITYA BIRLA</td>
+                <td>$1.02</td>
+                <td>-1.01</td>
+                <td>+2.36%</td>
+              </tr>
+              <tr>
+                <td>AAC</td>
+                <td>AUSTRALIAN COMPANY </td>
+                <td>$1.38</td>
+                <td>+2.01</td>
+                <td>-0.36%</td>
+              </tr>
+              <tr>
+                <td>AAD</td>
+                <td>AUSENCO</td>
+                <td>$2.38</td>
+                <td>-0.01</td>
+                <td>-1.36%</td>
+              </tr>
+              <tr>
+                <td>AAX</td>
+                <td>ADELAIDE</td>
+                <td>$3.22</td>
+                <td>+0.01</td>
+                <td>+1.36%</td>
+              </tr>
+              <tr>
+                <td>XXD</td>
+                <td>ADITYA BIRLA</td>
+                <td>$1.02</td>
+                <td>-1.01</td>
+                <td>+2.36%</td>
+              </tr>
+              <tr>
+                <td>AAC</td>
+                <td>AUSTRALIAN COMPANY </td>
+                <td>$1.38</td>
+                <td>+2.01</td>
+                <td>-0.36%</td>
+              </tr>
+              <tr>
+                <td>AAD</td>
+                <td>AUSENCO</td>
+                <td>$2.38</td>
+                <td>-0.01</td>
+                <td>-1.36%</td>
+              </tr>
+              <tr>
+                <td>AAX</td>
+                <td>ADELAIDE</td>
+                <td>$3.22</td>
+                <td>+0.01</td>
+                <td>+1.36%</td>
+              </tr>
+              <tr>
+                <td>XXD</td>
+                <td>ADITYA BIRLA</td>
+                <td>$1.02</td>
+                <td>-1.01</td>
+                <td>+2.36%</td>
+              </tr>
+              <tr>
+                <td>AAC</td>
+                <td>AUSTRALIAN COMPANY </td>
+                <td>$1.38</td>
+                <td>+2.01</td>
+                <td>-0.36%</td>
+              </tr>
+              <tr>
+                <td>AAD</td>
+                <td>AUSENCO</td>
+                <td>$2.38</td>
+                <td>-0.01</td>
+                <td>-1.36%</td>
+              </tr>
+              <tr>
+                <td>AAX</td>
+                <td>ADELAIDE</td>
+                <td>$3.22</td>
+                <td>+0.01</td>
+                <td>+1.36%</td>
+              </tr>
+              <tr>
+                <td>XXD</td>
+                <td>ADITYA BIRLA</td>
+                <td>$1.02</td>
+                <td>-1.01</td>
+                <td>+2.36%</td>
+              </tr>
+              <tr>
+                <td>AAC</td>
+                <td>AUSTRALIAN COMPANY </td>
+                <td>$1.38</td>
+                <td>+2.01</td>
+                <td>-0.36%</td>
+              </tr>
+              <tr>
+                <td>AAD</td>
+                <td>AUSENCO</td>
+                <td>$2.38</td>
+                <td>-0.01</td>
+                <td>-1.36%</td>
+              </tr>
+              <tr>
+                <td>AAX</td>
+                <td>ADELAIDE</td>
+                <td>$3.22</td>
+                <td>+0.01</td>
+                <td>+1.36%</td>
+              </tr>
+              <tr>
+                <td>XXD</td>
+                <td>ADITYA BIRLA</td>
+                <td>$1.02</td>
+                <td>-1.01</td>
+                <td>+2.36%</td>
+              </tr>
+              <tr>
+                <td>AAC</td>
+                <td>AUSTRALIAN COMPANY </td>
+                <td>$1.38</td>
+                <td>+2.01</td>
+                <td>-0.36%</td>
+              </tr>
+              <tr>
+                <td>AAD</td>
+                <td>AUSENCO</td>
+                <td>$2.38</td>
+                <td>-0.01</td>
+                <td>-1.36%</td>
+              </tr>
+              <tr>
+                <td>AAX</td>
+                <td>ADELAIDE</td>
+                <td>$3.22</td>
+                <td>+0.01</td>
+                <td>+1.36%</td>
+              </tr>
+              <tr>
+                <td>XXD</td>
+                <td>ADITYA BIRLA</td>
+                <td>$1.02</td>
+                <td>-1.01</td>
+                <td>+2.36%</td>
+              </tr>
+              <tr>
+                <td>AAC</td>
+                <td>AUSTRALIAN COMPANY </td>
+                <td>$1.38</td>
+                <td>+2.01</td>
+                <td>-0.36%</td>
+              </tr>
+              <tr>
+                <td>AAD</td>
+                <td>AUSENCO</td>
+                <td>$2.38</td>
+                <td>-0.01</td>
+                <td>-1.36%</td>
+              </tr>
+              <tr>
+                <td>AAX</td>
+                <td>ADELAIDE</td>
+                <td>$3.22</td>
+                <td>+0.01</td>
+                <td>+1.36%</td>
+              </tr>
+              <tr>
+                <td>XXD</td>
+                <td>ADITYA BIRLA</td>
+                <td>$1.02</td>
+                <td>-1.01</td>
+                <td>+2.36%</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        {/* follow me template */}
+        <div className="made-with-love">
+          Made with
+          <i>♥</i> by
+          <a target="_blank" href="https://codepen.io/nikhil8krishnan">Nikhil Krishnan</a>
         </div>
-      </main>
+      </div>
 
       <footer className={styles.footer}>
         <a
